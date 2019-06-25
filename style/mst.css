@@ -1,0 +1,119 @@
+div[class^="col"]{
+	/*border: 1px solid silver;*/
+	min-height: 20px;
+}
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/IRANSansWeb.eot');
+    src: url('../fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IRANSansWeb.woff2') format('woff2'),
+        url('../fonts/IRANSansWeb.woff') format('woff'),
+        url('../fonts/IRANSansWeb.ttf') format('truetype'),
+        url('../fonts/IRANSansWeb.svg#IRANSansWeb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	text-align: right;
+	direction: rtl;
+	font-family: IRANSansWeb;
+}
+.cl-both:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.container,.row{
+	height: 100%;
+}
+.v-c {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* header */
+.s-h-t{
+	background-color: #F2F2F2;
+	height: 40px; /* -21*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=63, Color=#D9D9D9)";/*IE 8*/
+-moz-box-shadow: -3px 6px 10px #D9D9D9 inset;/*FF 3.5+*/
+-webkit-box-shadow: -3px 6px 10px #D9D9D9 inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: -3px 6px 10px #D9D9D9 inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color=#D9D9D9); /*IE 5.5-7*/
+}
+.s-h-t *{
+	height: 100%;
+}
+.col-l ul{
+	left:0;
+	height: initial;
+	list-style: none;
+}
+.col-l li{
+	margin-left: 5.9px;
+	display: inline;
+}
+.col-l li i{
+	color: #707070;
+	font-size: 1.1em;
+}
+.col-r p{
+	margin: 0px;
+	padding-top: 10px;
+	font-size: 0.78em;
+}
+.s-h-b{
+	height: 61px;
+}
+.h-logo{
+	width: 40px;
+	height: 100%;
+	padding: 5px;
+}
+.h-logo img{
+	height: 100%;
+}
+nav.navbar ul{
+	list-style: none;
+	height: 100%;
+	padding-right: 0px;
+	margin:0;
+}
+nav.navbar ul li{
+	display: inline-block;
+	margin-right: 20px;
+	height: 100%;
+	margin-bottom: -100px!important;
+}
+nav.navbar ul li a{
+	height: 100%;
+	display: block;
+	line-height: 54px;
+	color: #242424;
+	font-size: 0.82em;
+}
+nav.navbar ul li a:hover{
+	border-bottom: 4px solid #9E0B0F;
+	text-decoration: none;
+}
+nav.navbar ul li a.active{
+	border-bottom: 4px solid #9E0B0F;
+}
+/*home serach container*/
+.home-s-con{
+	height: 410.29px;
+	background-image: url("../files/home-search.png");
+	background-size: cover;
+	position: relative;
+	margin-top: -3px;
+}
+.home-s-con .cover-b{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	opacity: 0.4;
+}

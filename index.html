@@ -2,9 +2,12 @@
 <html>
 <head>
 	<title>animord</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="style/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="style/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
 	<link rel="stylesheet" href="style/mst.css">
 </head>
 <body dir="rtl" lang="fa">
@@ -32,10 +35,16 @@
 	<section class="s-h-b">
 		<div class="container">
 			<div class="row no-gutters">				
-				<div class="col-1 h-logo">
-					<img src="files/animord-logo.png">
+				<div class="col-1 h-logo order-last order-sm-first">
+					<img src="files/animord-logo.png" class="">
 				</div>
+				<div class="res-t-menu">
+					<i class="v-c fas fa-bars"></i>
+					<div class="cover-menu"></div>
+				</div>
+				<!-- navbar -->
 				<nav class="col-auto navbar">
+					<span class="close d-sm-none"><i class="fas fa-times"></i></span>
 					<ul>
 						<li><a class="active" href="#">منو ی یک</a></li>
 						<li><a href="#">منو ی یک</a></li>
@@ -44,6 +53,7 @@
 						<li><a href="#">منو ی یک</a></li>						
 					</ul>
 				</nav>
+				<!-- end navbar -->
 				<div class="col nav-l">
 					<div class="con">
 						<a href="#" class="r-s"><span>ورود</span></a>
@@ -59,7 +69,7 @@
 	<div class="cover-b"></div>
 	<div class="container">
 		<div class="row no-gutters justify-content-center">
-			<div class="col-7">
+			<div class="col-12 col-sm-7">
 				<div class="v-c home-h-s">
 					<h1>فروشگاه تخصصی موشن گرافیک و انیمیشن</h1>
 					<div class="s-box">
@@ -90,14 +100,14 @@
 			<div class="col-12">
 				<div class="h-box-sli">
 					<!-- slider box -->
-					<div style="height:354px">
-					<div data-slider="slider-box-1" class="row slider-box" style="padding: 20px;">
-						<div class="col-5 img-box-sli">
+					<div class="slider-home-con">
+					<div class="row slider-box" style="padding: 20px;">
+						<div class="col-sm-5 col-12 img-box-sli">
 							<figure>
 								<img src="files/centerslide.png">
 							</figure>
 						</div>
-						<div class="col-7">
+						<div class="col-sm-7 col-12">
 							<div class="des-slider">
 								<h3>ل1ورم ایپسوم متن ساختگی</h3>
 								<ul>
@@ -121,13 +131,13 @@
 						</div>
 					</div>
 
-					<div data-slider="slider-box-2" class="row slider-box" style="padding: 20px;">
-						<div class="col-5 img-box-sli">
+					<div class="row slider-box" style="padding: 20px;">
+						<div class="col-sm-5 col-12 img-box-sli">
 							<figure>
 								<img src="files/1.png">
 							</figure>
 						</div>
-						<div class="col-7">
+						<div class="col-sm-7 col-12">
 							<div class="des-slider">
 								<h3>ل2ورم ایپسوم متن ساختگی</h3>
 								<ul>
@@ -152,13 +162,13 @@
 					</div>
 	
 
-					<div data-slider="slider-box-3" class="row slider-box" style="padding: 20px;">
-						<div class="col-5 img-box-sli">
+					<div class="row slider-box" style="padding: 20px;">
+						<div class="col-sm-5 col-12 img-box-sli">
 							<figure>
 								<img src="files/2.png">
 							</figure>
 						</div>
-						<div class="col-7">
+						<div class="col-sm-7 col-12">
 							<div class="des-slider">
 								<h3>3لورم ایپسوم متن ساختگی</h3>
 								<ul>
@@ -182,13 +192,13 @@
 						</div>
 					</div>
 
-					<div data-slider="slider-box-4" class="row slider-box" style="padding: 20px;">
-						<div class="col-5 img-box-sli">
+					<div class="row slider-box" style="padding: 20px;">
+						<div class="col-sm-5 col-12 img-box-sli">
 							<figure>
 								<img src="files/centerslide.png">
 							</figure>
 						</div>
-						<div class="col-7">
+						<div class="col-sm-7 col-12">
 							<div class="des-slider">
 								<h3>4لورم ایپسوم متن ساختگی</h3>
 								<ul>
@@ -227,10 +237,33 @@
 	</div>
 </section>
 <section>
-	<div class="container">
+	<div class="container box-art-subs">
+		<h3>محصولات</h3>
+		<header>
+			<ul>
+				<li class="drop-list-home-con"><a>همه دسته ها<span><i class="fas fa-caret-down"></i></span></a>
+					<ul class="drop-list-home">
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+					</ul>
+				</li>
+				<li class="drop-list-home-con"><a>محصولات<span><i class="fas fa-caret-down"></i></span></a>
+					<ul class="drop-list-home">
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+						<li><a href="#">همه دسته ها</a></li>
+					</ul>
+				</li>
+			</ul>
+		</header>
 		<div class="row no-gutters box-art-con">
 			<!-- articale -->
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -245,7 +278,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -260,7 +293,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -275,7 +308,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -289,8 +322,7 @@
 						</figure>
 					</a>
 				</article>
-			</div>
-			<div class="col-2">
+			</div><div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -305,7 +337,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -319,8 +351,7 @@
 						</figure>
 					</a>
 				</article>
-			</div>
-			<div class="col-2">
+			</div><div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -335,7 +366,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -349,8 +380,7 @@
 						</figure>
 					</a>
 				</article>
-			</div>
-			<div class="col-2">
+			</div><div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -365,7 +395,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -379,8 +409,7 @@
 						</figure>
 					</a>
 				</article>
-			</div>
-			<div class="col-2">
+			</div><div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -395,7 +424,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -409,8 +438,7 @@
 						</figure>
 					</a>
 				</article>
-			</div>
-			<div class="col-2">
+			</div><div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -425,7 +453,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -439,8 +467,7 @@
 						</figure>
 					</a>
 				</article>
-			</div>
-			<div class="col-2">
+			</div><div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -455,7 +482,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -469,8 +496,7 @@
 						</figure>
 					</a>
 				</article>
-			</div>
-			<div class="col-2">
+			</div><div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -485,7 +511,7 @@
 					</a>
 				</article>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-6">
 				<article class="box-art">
 					<a href="#">
 						<figure>
@@ -500,6 +526,7 @@
 					</a>
 				</article>
 			</div>
+	
 			<!-- end articale -->
 			<div class="col-12">
 				<div class="g-more-but-con">
@@ -519,7 +546,7 @@
 			<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
 			<div class="row" style="margin-top: 30px">
 				<!-- artists box -->
-				<div class="col-2 emp-box-con">
+				<div class="col-sm-2 col-3 emp-box-con">
 					<article>
 						<figure>
 							<img src="files/img_avatar.png">
@@ -528,7 +555,7 @@
 						<p class="dui">سمت کاربر</p>
 					</article>
 				</div>
-				<div class="col-2 emp-box-con">
+				<div class="col-sm-2 col-3 emp-box-con">
 					<article>
 						<figure>
 							<img src="files/img_avatar.png">
@@ -537,7 +564,7 @@
 						<p class="dui">سمت کاربر</p>
 					</article>
 				</div>
-				<div class="col-2 emp-box-con">
+				<div class="col-sm-2 col-3 emp-box-con">
 					<article>
 						<figure>
 							<img src="files/img_avatar.png">
@@ -546,7 +573,7 @@
 						<p class="dui">سمت کاربر</p>
 					</article>
 				</div>
-				<div class="col-2 emp-box-con">
+				<div class="col-sm-2 col-3 emp-box-con">
 					<article>
 						<figure>
 							<img src="files/img_avatar.png">
@@ -555,7 +582,7 @@
 						<p class="dui">سمت کاربر</p>
 					</article>
 				</div>
-				<div class="col-2 emp-box-con">
+				<div class="col-sm-2 col-3 emp-box-con">
 					<article>
 						<figure>
 							<img src="files/img_avatar.png">
@@ -564,7 +591,7 @@
 						<p class="dui">سمت کاربر</p>
 					</article>
 				</div>
-				<div class="col-2 emp-box-con">
+				<div class="col-sm-2 col-3 emp-box-con">
 					<article>
 						<figure>
 							<img src="files/img_avatar.png">
@@ -583,7 +610,7 @@
 		<h3 class="blog-h">بلاگ</h3>
 		<div class="row">
 			<!-- blog box start -->
-			<div class="col-4 blog-box-con">
+			<div class="col-sm-4 col-12 blog-box-con">
 				<article class="blog-box">
 					<figure>
 						<img src="files/2.png">
@@ -597,7 +624,7 @@
 					</footer>
 				</article>
 			</div>
-			<div class="col-4 blog-box-con">
+			<div class="col-sm-4 col-12 blog-box-con">
 				<article class="blog-box">
 					<figure>
 						<img src="files/1.png">
@@ -611,7 +638,7 @@
 					</footer>
 				</article>
 			</div>
-			<div class="col-4 blog-box-con">
+			<div class="col-sm-4 col-12 blog-box-con">
 				<article class="blog-box">
 					<figure>
 						<img src="files/2.png">
@@ -648,7 +675,7 @@
 			</ul>
 		</header>
 		<div class="row footer-list-con">
-			<div class="col-5">
+			<div class="col-sm-5 col-7">
 				<h3>ما را در شبکه های اجتماعی دنبال کنید</h3>
 				<ul class="footer-soci-net">
 						<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
@@ -659,7 +686,7 @@
 				</ul>
 				<img src="files/enamad.png" width="150">
 			</div>
-			<div class="col-3">
+			<div class="col-sm-3 col-5">
 				<h3>مطالب اخیر</h3>
 				<ul>
 					<li><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی  </a></li>
@@ -668,7 +695,7 @@
 				
 				</ul>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-7">
 				<h3>دسته بندی ها</h3>
 				<ul>
 					<li><a href="#">دسته بندی یک</a></li>
@@ -678,7 +705,7 @@
 					<li><a href="#">دسته بندی پنج</a></li>
 				</ul>
 			</div>
-			<div class="col-2">
+			<div class="col-sm-2 col-5">
 				<h3>کاربران</h3>
 				<ul>
 					<li><a href="#">ورود</a></li>

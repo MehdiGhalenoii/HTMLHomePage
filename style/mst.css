@@ -85,7 +85,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Col
 	padding: 5px;
 }
 .h-logo img{
-	height: 100%;
+	width: 50px;
 }
 nav.navbar ul{
 	list-style: none;
@@ -97,7 +97,7 @@ nav.navbar ul li{
 	display: inline-block;
 	margin-right: 20px;
 	height: 100%;
-	margin-bottom: -100px!important;
+	
 }
 nav.navbar ul li a{
 	height: 100%;
@@ -163,7 +163,6 @@ nav.navbar ul li a.active{
 	z-index: 0;
 }
 .home-h-s{
-	height: 250px;
 	width: 100%;
 }
 .home-h-s h1{
@@ -351,8 +350,77 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=36, Direction=135, Col
 	color: white;
 }
 /* gallery box style */
+.box-art-subs{
+	margin-top: 90px;
+}
+.box-art-subs > header{
+
+}
+.box-art-subs > header ul{
+	list-style: none;
+	padding:0px;
+	text-align: center;
+	margin-top: 27px;
+}
+.box-art-subs .drop-list-home-con{
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=32, Direction=0, Color=#000000)";/*IE 8*/
+-moz-box-shadow: 0 0 32px -19px #000000;/*FF 3.5+*/
+-webkit-box-shadow: 0 0 32px -19px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 0 0 32px -19px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=32, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+.box-art-subs .drop-list-home-con > a{
+	font-size: 0.88em;
+	display: inline-block;
+	width: 180px;
+	text-align: right;
+	background-color: white;
+	padding:12px 10px;
+	padding-right: 15px;
+	border-radius: 40px;
+}
+.box-art-subs .drop-list-home-con:hover a{
+	border-radius: 20px 20px 0px 0px;
+}
+.box-art-subs .drop-list-home-con ul{
+	position: absolute;
+	background-color: white;
+	z-index: 100;
+	top: 15px;
+	border-radius: 0px 0px 5px 5px;
+	width: 100%;
+	padding-bottom: 10px;
+
+}
+.box-art-subs .drop-list-home-con:hover ul{
+	display: block;
+}
+.box-art-subs .drop-list-home-con ul li {
+	margin-top:5px;
+}
+.box-art-subs .drop-list-home-con ul li a{
+	font-size: 0.8em;
+	display: block;
+	padding-right: 10px;
+}
+.box-art-subs .drop-list-home-con > a > span{
+	margin-right: 10px;
+	float: left;
+	margin-left: 5px;
+}
+.box-art-subs .drop-list-home-con ul{
+	display: none;
+}
+.box-art-subs h3{
+	text-align: center;
+	font-size: 1.3em;
+}
 .box-art-con{
-	margin-top: 100px;
+	margin-top: 10px;
 }
 .box-art-con > div{
 	margin-top: 20px;
@@ -613,4 +681,179 @@ footer.footer-m header ul li{
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 5px;
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+ 
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  
+ 	
+ 	body,html{
+ 		overflow-x: hidden;
+ 	}
+
+ 	nav.navbar{
+ 		position: fixed;
+ 		z-index: 1000;
+ 		top: 0;
+ 		right:-100%;
+ 		width: 200px;
+ 		height: 100%;
+ 		background-color: white;
+ 		transition: all 400ms;
+ 		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=38, Direction=351, Color=#000000)";/*IE 8*/
+-moz-box-shadow: -6px -1px 38px -15px #000000;/*FF 3.5+*/
+-webkit-box-shadow: -6px -1px 38px -15px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: -6px -1px 38px -15px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=38, Direction=135, Color=#000000); /*IE 5.5-7*/
+ 	}
+ 	.cover-menu{
+ 		position: fixed;
+ 		width: 100%;
+ 		height: 100%;
+ 		overflow: hidden;
+ 		z-index: 99;
+ 		background-color: black;
+ 		left: 0;
+ 		right: 0;
+ 		top: 0;
+ 		opacity: 0.5;
+ 		display: none;
+ 	}
+ 	nav.navbar.open{
+ 		right: 0;
+ 	}
+ 	nav.navbar span{
+ 		float: left;
+ 		padding: 10px;
+ 		font-size: 1.4em;
+ 	}
+ 	nav.navbar li{
+ 		display: block!important;
+ 		height: auto!important;
+ 		margin-bottom: 0px!important;
+ 		margin-right: 0!important;
+ 		border-top: 1px solid #e6e6e6;
+ 		
+ 	}
+ 	nav.navbar ul{
+		margin-top: 55px;
+ 	}
+ 	nav.navbar ul li a{
+ 		line-height: 46px;
+ 		padding-right: 20px;
+ 	}
+ 	.res-t-menu{
+ 		position: relative;
+ 		z-index: 10;
+ 	}
+ 	.res-t-menu i{
+ 		font-size: 1.25em;
+ 	}
+ 	.nav-l .shop-icon i{
+ 		margin-bottom: -4px;
+ 	}
+ 	.home-h-s h1{
+ 		font-size: 1em;
+ 	}
+ 	.slider-home-con{
+ 		height: 354px;
+ 	}
+ 	.home-search-input{
+ 		margin-top: 20px;
+ 	}
+ 	.home-s-con{
+ 		height: 280.29px;
+ 	}
+ 	.t-box ul li {
+		display: inline-block;
+		margin-left: 4px;
+		margin-top: 10px;
+	}
+	.slider-nav{
+		display: none;
+	}
+	.slider-home-con{
+		height: auto;
+	}
+	.des-slider h3{
+		margin-top: 20px;
+	}
+	.des-slider .w-m-des {
+		left: -10px;
+		top: 31%;
+	}
+	.emp-box-con {
+		padding: 4px;
+
+	}
+	.home-emp-con figure{
+		height: 90px;
+	}
+	.home-emp-s{
+		height: auto;
+	}
+	footer.footer-m header ul li {
+		width: 22.6%;
+	}
+	.footer-list-con > div {
+		
+	}
+	.footer-list-con {
+		padding: 0px 14px;
+	}
+	.col-l ul {
+		padding-right: 0;
+	}
+	.col-r p{
+		padding: 5px;
+		font-size: 0.72em;
+	}
+	.h-logo{
+		display: none;
+	}
+	.box-art-subs .drop-list-home-con {
+		margin-top: 13px;
+	}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+ 
 }

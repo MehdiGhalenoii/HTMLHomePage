@@ -2,7 +2,17 @@
 
 $(function(){
 
- 
+ $(".res-t-menu").click(function(e){
+ 	e.preventDefault();
+ 	$(".navbar").addClass("open");
+ 	$(".cover-menu").fadeIn(400);
+ })
+
+ $(".navbar .close").click(function(e){
+ 	e.preventDefault();
+ 	$(".navbar").removeClass("open");
+ 	$(".cover-menu").fadeOut(400);
+ })
 
  $('.slider-box').not(":first-child").hide();
 
@@ -30,13 +40,13 @@ var cou = 1;
 var slider = function(){
 	var max = $(".slider-box").length;
 	var on_i2 = $(".nav-sli-active").attr("data-slider-i");
-	console.log(on_i2);
+	
 	var slide_on2 = ".slider-box:eq("+on_i2+")";
 	$(slide_on2).hide();
 	$("li.nav-sli-active").removeClass("nav-sli-active");
 	var on_next_i2 = (Number(on_i2) < max-1) ?  Number(on_i2) + 1 : 0 ;
 	var slide_next_on2 = ".slider-box:eq("+on_next_i2+")";
-	console.log(on_next_i2);
+	
 	$("[data-slider-i="+on_next_i2+"]").addClass("nav-sli-active");
 	$(slide_next_on2).fadeIn(1000);
 	
